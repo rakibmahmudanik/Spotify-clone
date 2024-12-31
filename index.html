@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ---------Google font---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ---------Google font---------- -->
+
+    <!-- ---------Font Awesome CDN---------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---------Font Awesome CDN---------- -->
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="assets/logo.png" alt="logo" width="32px" />
+        </div>
+        <div class="search-bar">
+          <div class="home">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="What do you want to play?" />
+            <div class="small-vl"></div>
+            <i class="fa-solid fa-window-maximize browse"></i>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="sign-in button-style">Sign in</button>
+          <button class="log-in button-style">Log in</button>
+        </div>
+      </header>
+      <main>
+        <div class="side-bar">
+          <div class="side-bar-title">
+            <div class="library">
+              <img src="assets/library_icon.png" alt="icon" />
+              <h3>Your Library</h3>
+            </div>
+            <i class="fa-solid fa-plus plus-icon"></i>
+          </div>
+
+          <div class="sb-contents">
+            <div class="sb-content">
+              <h4>Create Your First Playlist</h4>
+              <p>It's easy, we'll help you</p>
+              <button class="sb-button">Create playlist</button>
+            </div>
+
+            <div class="sb-content">
+              <h4>Let's find some podcasts to follow</h4>
+              <p>It's easy, we'll help you</p>
+              <button class="sb-button">Browse podcasts</button>
+            </div>
+          </div>
+
+          <div class="sb-footer">
+            <div class="footer-content">
+              <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Safety & Privacy Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">About Ads</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <button class="footer-button">
+              <i class="fa-solid fa-globe"></i>English
+            </button>
+          </div>
+        </div>
+        <div class="content-bar">
+          <div class="cb-container">
+            <!--================== Artist section  starts here ============== -->
+            <section id="artists">
+              <div class="section-title">
+                <h2>Popular artists</h2>
+                <p>Show all</p>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <div class="play-btn">
+                    <img src="assets/Play-Button.png" alt="Play-Button" />
+                  </div>
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca"
+                    alt="Pritam"
+                  />
+
+                  <div class="card-info">
+                    <p class="card-name">Pritam</p>
+                    <span class="card-desc">Artist</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="play-btn">
+                    <img src="assets/Play-Button.png" alt="Play-Button" />
+                  </div>
+                  <img
+                    src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                    alt="Pritam"
+                  />
+
+                  <div class="card-info">
+                    <p class="card-name">Arijit Sing</p>
+                    <span class="card-desc">Artist</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="play-btn">
+                    <img src="assets/Play-Button.png" alt="Play-Button" />
+                  </div>
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84"
+                    alt="Pritam"
+                  />
+
+                  <div class="card-info">
+                    <p class="card-name">Atif Aslam</p>
+                    <span class="card-desc">Artist</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="play-btn">
+                    <img src="assets/Play-Button.png" alt="Play-Button" />
+                  </div>
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000e5eba837a6cb82dd949d5e1f9b53"
+                    alt="Pritam"
+                  />
+
+                  <div class="card-info">
+                    <p class="card-name">Anuv Jain</p>
+                    <span class="card-desc">Artist</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="play-btn">
+                    <img src="assets/Play-Button.png" alt="Play-Button" />
+                  </div>
+                  <img
+                    src="https://i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad"
+                    alt="Pritam"
+                  />
+
+                  <div class="card-info">
+                    <p class="card-name">Sachin-Jigar</p>
+                    <span class="card-desc">Artist</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="play-btn">
+                    <img src="assets/Play-Button.png" alt="Play-Button" />
+                  </div>
+                  <img
+                    src="https://i.scdn.co/image/ab6761610000e5ebfb13d10be20fdcb5a670f551"
+                    alt="Pritam"
+                  />
+
+                  <div class="card-info">
+                    <p class="card-name">Vishal Mishra</p>
+                    <span class="card-desc">Artist</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--================== Artist section  ends here ============== -->
+
+            <!--================== Albums section  starts here ============== -->
+
+            <section id="albums">
+              <div class="section-title">
+                <h2>Popular albums</h2>
+                <p>Show all</p>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67616d0000b273fa9247b68471b82d2125651e"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <p class="card-name">D-DAY</p>
+                    <span class="card-desc">August D</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67616d0000b27372a77d038887cdc425f5ee55"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <p class="card-name">Jo Tum Mere Ho</p>
+                    <span class="card-desc">Anuv Jain</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67616d0000b273741fd4807f442af3f7359316"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <p class="card-name">GOLDEN</p>
+                    <span class="card-desc">Jung Kook</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67616d0000b27358ecb3e5ec3bbef70ee09e43"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <p class="card-name">Alas Ka Pedh</p>
+                    <span class="card-desc">The Local Train</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67616d0000b273a1c00de3e08bfde2c646c7a3"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <p class="card-name">
+                      Best Of Romance: Atif Aslam & Pritam
+                    </p>
+                    <span class="card-desc">Atif Aslam & Pritam</span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67616d0000b273f02c451189a709b9a952aaec"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <p class="card-name">MUSE</p>
+                    <span class="card-desc">Jimin</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--================== Albums section  Ends here ============== -->
+
+            <!--================== Radio section  Starts here ============== -->
+
+            <section id="radio" class="common-section-design">
+              <div class="section-title">
+                <h2>Popular radio</h2>
+                <p>Show all</p>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >With Sachin-Jigar, Mithoon, Atif Aslam and more</span
+                    >
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/06eRdiCBgFUhiuFjei0eH2/en"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >With Shironamhin, Aftermath, AvoidRafa and more
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/60jYUgQzKAtnJoXKGk1GNn/en"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >With Hridoy Khan, Balam, Minar Rahman and more
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/37LGjqM0je1KNrLRD3MZ47/en"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >With Karnival, Level Five, Nemesis and more
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3DeHMjvYP73Pycy8va8RKY/en"
+                      alt="Arnob"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >With Shunno, Minar Rahman, Bappa Mazumder and more
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >With Pritam, Mohit Chauhan, Armaan Malik and more
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--================== Radio section  Ends here ============== -->
+
+            <!--================== Featured Chart section  starts here ============== -->
+
+            <section id="featured" class="common-section-design">
+              <div class="section-title">
+                <h2>Featured charts</h2>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >Your weekly update of the most played tracks right now -
+                      Global.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >Your weekly update of the most played tracks right now -
+                      USA.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >Your daily update of the most played tracks right now -
+                      Global.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >Your daily update of the most played tracks right now -
+                      USA.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                      alt="Arnob"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >Your daily update of the most viral tracks right now -
+                      Global.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >Your daily update of the most viral tracks right now -
+                      USA.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--================== Featured Chart section  Ends here ============== -->
+
+            <!--================== Playlist section  starts here ============== -->
+
+            <section id="playlist" class="common-section-design">
+              <div class="section-title">
+                <h2>Spotify Playlist</h2>
+                <p>Show all</p>
+              </div>
+              <div class="cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f00000002d2c23cff8e4056e5c891216d"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >Dance to the rhythm and move your feet!
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f000000029bbc38dae393e154d84dae40"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >The ultimate rock party playlist!
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f000000021cb757ccbe7a4f7e0e67fe4a"
+                      alt="Pritam"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >The biggest party hits of the 2010s. Cover: Kesha
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f00000002d56955aeca2541ee8d9cd026"
+                      alt="Hiphop"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc">Classics like In Da Club </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f00000002abf84d549f87ed110df1b750"
+                      alt="Arnob"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >The biggest party hits of the 2000s. Cover: Shakira.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-img">
+                    <img
+                      src="https://i.scdn.co/image/ab67706f00000002be86b0e17ba01f2160355952"
+                      alt="R&D classic"
+                    />
+
+                    <div class="play-btn">
+                      <img src="assets/Play-Button.png" alt="Play-Button" />
+                    </div>
+                  </div>
+
+                  <div class="card-info">
+                    <span class="card-desc"
+                      >90's & 00's party jams with Aaliyah, Justin Timberlake,
+                      Destiny's Child and Usher.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!--================== Playlist section  ends here ============== -->
+
+            <div class="cb-footer">
+              <div class="footer-contents">
+                <table>
+                  <tr>
+                    <th>Company</th>
+                    <th>Communities</th>
+                    <th>Useful links</th>
+                    <th>Spotify Plans</th>
+                    <th class="footer-icon">
+                      <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-facebook"></i>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td><a href="#">About </a></td>
+                    <td><a href="#">For Artists </a></td>
+                    <td><a href="#">Support </a></td>
+                    <td><a href="#">Premium Individual</a></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="#">Jobs </a></td>
+                    <td><a href="#">Developers </a></td>
+                    <td><a href="#">Free Mobile App </a></td>
+                    <td><a href="#">Premium Duo </a></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td><a href="#">For the Record </a></td>
+                    <td><a href="#">Advertising </a></td>
+                    <td></td>
+                    <td><a href="#">Premium Family </a></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td><a href="#">Investors </a></td>
+                    <td></td>
+                    <td><a href="#">Premium Student </a></td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td><a href="#">Vendors </a></td>
+                    <td></td>
+                    <td><a href="#">Spotify Free </a></td>
+                    <td></td>
+                  </tr>
+                </table>
+                <div class="hr-line"></div>
+                <span class="copyright">&copy; 2024 Spotify AB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
